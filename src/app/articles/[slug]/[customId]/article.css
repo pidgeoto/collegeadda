@@ -1,0 +1,22 @@
+h2 {
+  margin: 8px 0px;
+  color: #334154;
+  font-weight: 500;
+}
+h3 {
+  margin: 4px 0px;
+  color: #334154;
+}
+table {
+  margin: 16px 0px;
+}
+
+#listitem li {
+  list-style-type: circle !important;
+  font-size: 15px;
+  margin: 4px 0px 4px 16px;
+}
+
+#listitem li::marker {
+  color: red;
+}

@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #fbfaff;
+}
+
+@layer base {
+  .f-row {
+    @apply flex flex-row items-center justify-center lg:justify-start flex-wrap;
+  }
+  .f-col {
+    @apply flex flex-col;
+  }
+  .f-center {
+    @apply flex items-center justify-center;
+  }
+  .f-between {
+    @apply flex items-center justify-between flex-col lg:flex-row;
+  }
+  .f-between-row {
+    @apply flex items-center justify-between flex-row;
+  }
+  h1 {
+    @apply lg:text-3xl;
+  }
+  h2 {
+    @apply lg:text-xl;
+  }
+  h3 {
+    @apply text-sm lg:text-lg;
+  }
+
+  a {
+    @apply font-bold;
+  }
+}
+
+.filterBtn {
+  @apply shadow-lg border  py-4 rounded-md w-40 mt-4;
+}
+.selected {
+  background-color: #f0f0f0;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+table {
+  border: 1px solid;
+  width: 100%;
+  color: #000 !important;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table th {
+  font-weight: 500;
+  height: 40px;
+  font-size: 15px;
+  background: #3f58fa;
+  color: #fff;
+}
+
+table tr {
+  background: #fff;
+  height: 30px;
+}
+
+table tr:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
+  cursor: pointer;
+}
+
+table td {
+  text-align: center;
+  font-size: 12px;
+}
+
+#primary th {
+  background: #3f58fa;
+  color: #fff;
+}
+
+#secondary th {
+  background: #159c25;
+  color: #fff;
+}
+
+#tertiary th {
+  background: #fa3f3f;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+  }
+
+  table td {
+    text-align: left;
+    font-size: 10px;
+  }
+}

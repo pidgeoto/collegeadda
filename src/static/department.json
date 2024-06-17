@@ -1,0 +1,22 @@
+{
+  "department": [
+    "Engineering",
+    "Management",
+    "Medical",
+    "Law",
+    "Computer Applications",
+    "Mass Communications",
+    "Pharmacy",
+    "Science",
+    "Agriculture",
+    "Paramedical",
+    "Arts",
+    "Vocational Courses",
+    "Dental",
+    "Hotel Management",
+    "Veterinary Sciences",
+    "Aviation",
+    "Animation",
+    "Others"
+  ]
+}
